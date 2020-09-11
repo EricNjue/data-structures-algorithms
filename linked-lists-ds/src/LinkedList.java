@@ -111,6 +111,29 @@ public class LinkedList {
     }
 
 
+    public void reverse() {
+
+        if (isEmpty())
+            return;
+
+        var previous = first;
+        var current = first.next;
+
+        // [10 -> 20 -> 30]
+        //  p     c     n
+        while (current != null) {
+            var next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        last = first;
+        last.next = null;
+        first = previous;
+
+    }
+
+
     public int size() {
         return size;
     }

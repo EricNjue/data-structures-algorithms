@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,12 +10,15 @@ public class Main {
         list.addLast(30);
         list.addLast(40);
 
-        list.removeLast();
+        list.reverse();
+        System.out.println(Arrays.toString(list.toArray()));
 
-        int[] data=list.toArray();
-
-        System.out.println(list.indexOf(20));
-        System.out.println(list.contains(10));
+//        list.removeLast();
+//
+//        int[] data=list.toArray();
+//
+//        System.out.println(list.indexOf(20));
+//        System.out.println(list.contains(10));
 
     }
 }

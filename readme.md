@@ -6,6 +6,15 @@
 * Best used when you know ahead of time the number of items to be stored.
 
 # Linked Lists
+
+Types of Linked Lists
+* Singly :- only holds a pointer to the next node
+* Doubly :- it holds a pointer to both the previous and the next node. 
+
+Note: Linked Lists in java are an implementation of Doubly Linked Lists.
+
+Did you know the following about linked lists?
+
 * They don't waste memory. i.e They take just as much memory as they need.
 * They take/consume some extra memory since each node must store its value and a pointer to the next node. 
 * Best used when you don't know ahead of time the number of items to be stored.
