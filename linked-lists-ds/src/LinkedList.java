@@ -178,6 +178,41 @@ public class LinkedList {
     }
 
 
+    public boolean hasLoop() {
+        // check to see if a linked list has a loop. i.e Floyd's Cycle-finding Algorithm ...
+        var slow = first;
+        var fast = first;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast)
+                return true;
+        }
+
+        return false;
+    }
+
+    // method to simulate a linked list with a loop ...
+    public static LinkedList createWithLoop() {
+        var list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+
+        // Get a reference to 30
+        var node = list.last;
+
+        list.addLast(40);
+        list.addLast(50);
+
+        // Create the loop
+        list.last.next = node;
+
+        return list;
+    }
+
     public int size() {
         return size;
     }
