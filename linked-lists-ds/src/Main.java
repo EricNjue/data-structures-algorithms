@@ -8,8 +8,10 @@ public class Main {
         list.addLast(30);
         list.addLast(40);
         list.addLast(50);
+        list.addLast(60);
 
-        System.out.println(list.getKthNodeFromTheEnd(3));
+        System.out.println(list.printMiddle());
+        System.out.println(list.getKthNodeFromTheEnd(1));
 
         // list.reverse();
         // System.out.println(Arrays.toString(list.toArray()));

@@ -157,6 +157,27 @@ public class LinkedList {
     }
 
 
+    public String printMiddle() {
+
+        if (isEmpty())
+            throw new IllegalStateException();
+
+        var a = first;
+        var b = first;
+
+        while (b != last && b.next != last) {
+            a = a.next;
+            b = b.next.next;
+        }
+
+        if (b == last)
+            return String.valueOf(a.value);
+        else
+            return String.format("[%d, %d]", a.value, a.next.value);
+
+    }
+
+
     public int size() {
         return size;
     }
