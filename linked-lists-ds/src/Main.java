@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -9,9 +7,12 @@ public class Main {
         list.addLast(20);
         list.addLast(30);
         list.addLast(40);
+        list.addLast(50);
 
-        list.reverse();
-        System.out.println(Arrays.toString(list.toArray()));
+        System.out.println(list.getKthNodeFromTheEnd(3));
+
+        // list.reverse();
+        // System.out.println(Arrays.toString(list.toArray()));
 
 //        list.removeLast();
 //
