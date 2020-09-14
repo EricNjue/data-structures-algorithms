@@ -64,4 +64,20 @@ Queues supported operations include :-
 
 All queue operations also have a run time complexity of O(1)
 
+# Hash Tables
+
+They're basically dictionaries.
+They've super fast look up methods. :-)
+In java, hash table implementation is via HashMap
+
+Their use case scenarios include :-
+* Spell Checkers
+* Dictionaries
+* Compilers
+* Code Editors
+
+Operations supported by hash tables are :-
+* Insert O(1)
+* Look Up O(1)
+* Delete O(1)
 

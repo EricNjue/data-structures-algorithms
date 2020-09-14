@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/arrays-ds/arrays-ds.iml" filepath="$PROJECT_DIR$/arrays-ds/arrays-ds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hast-tables-ds/hast-tables-ds.iml" filepath="$PROJECT_DIR$/hast-tables-ds/hast-tables-ds.iml" />
       <module fileurl="file://$PROJECT_DIR$/linked-lists-ds/linked-lists-ds.iml" filepath="$PROJECT_DIR$/linked-lists-ds/linked-lists-ds.iml" />
       <module fileurl="file://$PROJECT_DIR$/queues-ds/queues-ds.iml" filepath="$PROJECT_DIR$/queues-ds/queues-ds.iml" />
       <module fileurl="file://$PROJECT_DIR$/stacks-ds/stacks-ds.iml" filepath="$PROJECT_DIR$/stacks-ds/stacks-ds.iml" />
