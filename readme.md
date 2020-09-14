@@ -48,4 +48,20 @@ Stack supported operations are :-
 
 All stack operations have a run time complexity of O(1)
 
+# Queues
+
+Queues use the First In First Out (FIFO) principle.
+
+Its implementations scenarios include :-
+* Printers printing jobs
+* Web servers processing incoming requests
+
+Queues supported operations include :-
+* Dequeue :- removing an item from the queue
+* Enqueue :- adding an item to the queue
+* IsEmpty :- checks whether the queue is empty
+* Peek :- checks the item at the top of the queue without deleting it.
+
+All queue operations also have a run time complexity of O(1)
+
 
