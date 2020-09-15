@@ -81,3 +81,24 @@ Operations supported by hash tables are :-
 * Look Up O(1)
 * Delete O(1)
 
+# Trees
+
+Trees implementation scenarios include :-
+* Represent hierarchical data
+* Databases
+* Autocompletion
+* Compilers
+* Compression (JPEG, MP3)
+
+Binary Search Tree (BST)
+- In a BST, the value of any node is greater than the value in the left child and less than the value in the right child. i.e
+left < node < right
+- Looking up data in a BST involves logarithmic time. i.e in every look up we throw out half of the elements.
+
+Trees supported operations are :-
+
+* LookUp O(log n)
+* Insert O(log n)
+* Delete O(log n)
+
+
