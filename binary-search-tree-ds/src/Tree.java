@@ -43,6 +43,90 @@ public class Tree {
                 current = current.rightChild;
             }
         }
+    }
+
+
+    public boolean find2(int value) {
+        var current = root;
+
+        while (current != null) {
+            if (value < current.value)
+                current = current.leftChild;
+            else if (value > current.value)
+                current = current.rightChild;
+            else
+                return true;
+        }
+        return false;
+    }
+
+    public boolean find(int value) {
+        // no item in the BST ...
+        if (root == null)
+            return false;
+
+        // if its one item in the BST ...
+        if (root.value == value)
+            return true;
+
+        var current = root;
+        while (true) {
+            if (value < current.value) {
+                if (current.leftChild == null)
+                    return false;
+
+                if (current.leftChild.value == value)
+                    return true;
+                current = current.leftChild;
+            } else {
+                if (current.rightChild == null)
+                    return false;
+
+                if (current.rightChild.value == value)
+                    return true;
+                current = current.rightChild;
+            }
+        }
+    }
+
+    private void traversePreOrder(Node root) {
+        // root, left, right
+        if (root == null)
+            return;
+        System.out.printf("%d,", root.value);
+        traversePreOrder(root.leftChild);
+        traversePreOrder(root.rightChild);
+    }
+
+    public void traversePreOrder() {
+        traversePreOrder(root);
+    }
+
+
+    public void traverseInOrder() {
+        traverseInOrder(root);
+    }
+
+    private void traverseInOrder(Node root) {
+        if (root == null)
+            return;
+
+        traverseInOrder(root.leftChild);
+        System.out.printf("%d,", root.value);
+        traverseInOrder(root.rightChild);
+    }
+
+    public void traversePostOrder() {
+        traversePostOrder(root);
+    }
+
+    private void traversePostOrder(Node root) {
+        if (root == null)
+            return;
+
+        traverseInOrder(root.leftChild);
+        traverseInOrder(root.rightChild);
+        System.out.printf("%d,", root.value);
 
     }
 }

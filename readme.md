@@ -101,4 +101,13 @@ Trees supported operations are :-
 * Insert O(log n)
 * Delete O(log n)
 
+To traverse a BST, you can use either of the following :-
+* Breadth First (Level Order) :-  it involves traversing the BST on a level basis. 
+                            i.e visit all the nodes at the same level before going to the other levels
+* Depth First :- here we have three ways in which we can traverse the BST :-
+    * Pre-Order :- We visit the root, then the left subtree then the right subtree. i.e root, left, right
+    * In-Order :- We visit the left subtree, then the root then the right subtree. i.e left, root, right . 
+                The values will be traversed in ascending order.
+    * Post-Order :- We visit the left subtree, then the right subtree then the root. i.e left, right, root.
+
 
