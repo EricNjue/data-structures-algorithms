@@ -15,6 +15,11 @@ public class Main {
         tree.traverseInOrder();
         System.out.println("\n===============");
         tree.traversePostOrder();
+        System.out.println("\n===============");
+
+
+        System.out.printf("The Height Of The Tree Is: %d%n", tree.getNodeHeight());
+
 //        System.out.println(tree);
 //
 //        System.out.println(tree.find(10));

@@ -127,6 +127,19 @@ public class Tree {
         traverseInOrder(root.leftChild);
         traverseInOrder(root.rightChild);
         System.out.printf("%d,", root.value);
+    }
 
+    public int getNodeHeight() {
+        return getNodeHeight(root);
+    }
+
+    private int getNodeHeight(Node root) {
+        if (root == null)
+            return -1;
+
+        if (root.leftChild == null && root.rightChild == null)
+            return 0;
+
+        return 1 + Math.max(getNodeHeight(root.leftChild), getNodeHeight(root.rightChild));
     }
 }
